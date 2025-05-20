@@ -1,0 +1,685 @@
+body {
+    font-family: 'Arial', sans-serif; /* Schriftart */
+    line-height: 1.6; /* Zeilenabstand */
+    color: #333; /* Haupttextfarbe */
+    background-color: #f8f9fa; /* Hintergrundfarbe */
+}
+
+/* ===== NAVIGATION ===== */
+/* Stil für die Menüleiste oben */
+.navbar {
+    background-color: #0f1923; 
+    transition: all 0.3s ease; 
+    padding: 15px 0; 
+}
+
+/* Stil für den Logo-Text */
+#logo-text {
+    font-weight: 700;
+    font-size: 1.5rem; 
+    color: #f5a623; 
+}
+
+/* Stil für die Navigationslinks */
+.nav-link {
+    font-weight: 500; 
+    position: relative; /* Für die Unterstreichung */
+    margin: 0 10px; 
+}
+
+/* Unterstreichungseffekt bei Hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e19316; 
+    transition: width 0.3s; /* Sanfte Animation */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Volle Breite bei Hover */
+}
+.section-title{
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 3rem; 
+    display: inline-block; 
+  
+    
+}
+
+.hero-bild {
+    /* Hintergrundbild mit dunklem Überlay */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Hintergrundsbild.jpg");
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+}
+
+
+
+/* Große Überschrift */
+.grosse-ueberschrift {
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Untertitel unter der großen Überschrift */
+.untertitel {
+    font-size: 1.5rem; 
+    color: #f5a623; 
+    margin-bottom: 2rem; 
+}
+
+
+/* Container für den Countdown-Timer */
+.countdown-container {
+    margin: 2rem 0; 
+}
+
+/* Stil für jedes Countdown-Element (Tage, Stunden etc.) */
+.countdown-box {
+    display: inline-block; 
+    text-align: center;
+    margin: 0 1rem; 
+}
+/* Große Zahlen im Countdown */
+.countdown-number {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    display: block; 
+    color: #f5a623; 
+}
+
+/* Beschriftung unter den Zahlen */
+.countdown-label {
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+/* ===== BUTTONS ===== */
+/* Primärer Button (orange) */
+.btn-primary {
+    background-color: #f5a623; 
+    border: none; /* Kein Rahmen */
+    padding: 12px 30px; /* Innenabstand */
+    font-weight: 600; 
+    transition: all 0.3s; /* Sanfte Übergänge */
+}
+
+/* Hover-Effekt für Button */
+.btn-primary:hover {
+    background-color: #e99c21; 
+    transform: translateY(-3px); /* Leicht nach oben bewegen */
+    box-shadow: 0 5px 15px rgba(245, 166, 35, 0.4); 
+}
+
+/* Sekundärer Button (umrandet) */
+.btn-secondary {
+    background-color: transparent; 
+    border: 2px solid #f5a623; /* Orangener Rahmen */
+    color: rgb(243, 230, 230); 
+    padding: 12px 30px; 
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* Hover-Effekt für sekundären Button */
+.btn-secondary:hover {
+    background-color: rgba(245, 166, 35, 0.1);
+    color: white; 
+    transform: translateY(-3px); 
+}
+
+
+/* Standard-Abschnitt mit weißem Hintergrund */
+.section-standard {
+    padding: 5rem 0; 
+    background-color: white; 
+}
+
+
+/* Stil für Abschnitts-Titel */
+.section-title {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    margin-bottom: 3rem; 
+    display: inline-block; 
+}
+
+/* Standard-Text in Abschnitten */
+.section-text {
+    font-size: 1.1rem; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Hervorgehobener Text */
+.highlight {
+    color: #f5a623; 
+    font-weight: 600; 
+}
+/* Video-Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Video selbst */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+ 
+/* Turnier-Infos Bereich */
+#turnier {
+    background-color: rgba(15, 25, 35, 0.7);
+    color: #ffffff; /* Weiße Schrift für besseren Kontrast */
+    padding: 3rem 0;
+    border-radius: 8px; /* Optional: abgerundete Ecken */
+}
+
+/* Verbesserte Lesbarkeit für die Info-Karten */
+.info-karte {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.info-karte:hover {
+    transform: translateY(-5px);
+}
+
+.info-karte-icon i {
+    font-size: 2rem;
+    color: #4eacff; /* Helle Akzentfarbe für Icons */
+    margin-bottom: 1rem;
+}
+
+.info-karte-titel {
+    color: #ffffff;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.info-karte-liste {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-karte-liste li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.termin-label {
+    color: #4eacff; /* Gleiche Akzentfarbe wie Icons */
+    font-weight: 500;
+    display: inline-block;
+    width: 140px;
+}
+
+/* Tabellen-Styling */
+.turnier-tabelle {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-collapse: collapse;
+}
+
+.turnier-tabelle th, 
+.turnier-tabelle td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.turnier-tabelle th {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+.turnier-tabelle tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* Regeln Sektion */
+.regel-karte {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.regel-ueberschrift {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.regel-liste {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.regel-liste li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.regel-liste li:before {
+    content: "•";
+    color: #f1c40f;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+}
+
+.regel-liste li:last-child {
+    border-bottom: none;
+}
+/* ===== GALERIE ===== */
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.card-body {
+    background-color: rgba(15, 25, 35, 0.9);
+    padding: 1rem;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    color: #ffffff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f5a623; /* Orange */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.custom-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 166, 35, 0.3), 0 0 12px rgba(15, 25, 35, 0.7);
+    border-radius: 0.5rem;
+}
+
+.custom-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(245, 166, 35, 0.5), 0 0 20px rgba(15, 25, 35, 0.8);
+}
+/* Dunkler Abschnitt */
+.section-dark {
+    padding: 5rem 0; 
+    background-color: #0f1923; 
+    color: white; 
+}
+
+
+
+.esport-benefits {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .esport-benefits h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .benefit-item {
+      margin-bottom: 15px;
+    }
+    .benefit-icon {
+      font-size: 24px;
+      color: #007bff;
+      margin-right: 10px;
+    }
+
+/* ===== IMPRESSUM ===== */
+/* Container für Impressumsinformationen */
+.impressum-karte {
+  background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Zentriert den Inhalt vertikal */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto; /* Zentriert die Karte horizontal */
+    max-width: 100%; 
+}
+
+/* Titel des Impressums */
+.impressum-titel {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: 1.5rem; 
+    padding-bottom: 1rem; 
+    border-bottom: 2px solid #f5a623; /* Orangene Linie unter dem Titel */
+}
+
+/* Container für einzelne Impressums-Infos */
+.impressum-info {
+    margin-bottom: 1.5rem; 
+}
+
+/* Überschriften in Impressums-Infos */
+.impressum-info h4 {
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    color: #f5a623; 
+    margin-bottom: 0.5rem; 
+}
+
+/* Text in Impressums-Infos */
+.impressum-info p {
+    font-size: 1rem; 
+    color: #333; 
+}
+
+/* ===== SOCIAL MEDIA ICONS ===== */
+/* Container für Social Media Icons */
+.social-icons {
+    display: flex; /* Elemente nebeneinander */
+    gap: 1rem; /* Abstand zwischen Icons */
+    margin-top: 2rem; 
+}
+
+/* Stil für einzelne Social Media Links */
+.social-link {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    font-size: 1.2rem; 
+    color: white;
+    transition: all 0.3s; 
+}
+
+/* Farben für verschiedene Social Media Plattformen */
+.social-link.instagram {
+    background-color: #E1306C; 
+}
+
+.social-link.twitter {
+    background-color: #1DA1F2; 
+}
+
+.social-link.tiktok {
+    background-color: #000000; 
+}
+
+/* Hover-Effekt für Social Media Links */
+.social-link:hover {
+    transform: translateY(-5px); /* Leicht nach oben bewegen */
+    opacity: 0.9; /* Leicht durchsichtig */
+}
+
+/* ===== FOOTER ===== */
+/* Stil für die Fußzeile */
+.footer {
+    background-color: #0f1923; 
+    color: white; 
+    padding: 2rem 0; 
+}
+
+/* Copyright-Text */
+.copyright {
+    font-size: 0.9rem; 
+    color: #aaa;
+}
+
+/* Links in der Fußzeile */
+.footer-links a {
+    color: white; /* Weiße Schrift */
+    margin-left: 1.5rem; 
+    text-decoration: none; 
+    transition: color 0.3s; /* Sanfter Farbübergang */
+}
+
+/* Hover-Effekt für Footer-Links */
+.footer-links a:hover {
+    color: #f5a623; /* Orange Farbe */
+}
+/* ===== ALLGEMEINE RESPONSIVE EINSTELLUNGEN ===== */
+
+/* Extra kleine Geräte (Handys, bis 576px) */
+@media (max-width: 575.98px) {
+    /* Anpassungen für kleine Bildschirme */
+    .grosse-ueberschrift {
+        font-size: 2.2rem;
+    }
+    
+    .untertitel {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .subsection-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .hero-bild {
+        min-height: 80vh;
+        padding-top: 70px;
+    }
+    
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Impressum Anpassungen */
+    .impressum-karte {
+        padding: 1.5rem;
+    }
+    
+    /* Galerie Anpassungen */
+    .card-img-top {
+        height: 200px;
+    }
+    
+    /* Turnier-Tabelle Anpassungen */
+    .turnier-tabelle th, 
+    .turnier-tabelle td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    
+    /* FAQ Anpassungen */
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Kleine Geräte (Handys im Hochformat, 576px und größer) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .grosse-ueberschrift {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-bild {
+        min-height: 85vh;
+    }
+    
+    /* Turnier-Tabelle Anpassungen */
+    .turnier-tabelle th, 
+    .turnier-tabelle td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mittlere Geräte (Tablets, 768px und größer) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .grosse-ueberschrift {
+        font-size: 3rem;
+    }
+    
+    .hero-bild {
+        min-height: 90vh;
+    }
+    
+    /* Video-Container Anpassung */
+    .video-container {
+        margin-top: 2rem;
+    }
+}
+
+/* Große Geräte (Desktops, 992px und größer) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Hier können spezifische Anpassungen für große Desktops gemacht werden */
+}
+
+/* Extra große Geräte (große Desktops, 1200px und größer) */
+@media (min-width: 1200px) {
+    /* Hier können spezifische Anpassungen für sehr große Bildschirme gemacht werden */
+}
+
+/* ===== SPEZIFISCHE RESPONSIVE ANPASSUNGEN ===== */
+
+/* Navigation für mobile Geräte */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #0f1923;
+        padding: 1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .nav-link::after {
+        display: none; /* Unterstreichungseffekt auf mobilen Geräten ausblenden */
+    }
+}
+
+/* Turnier-Tabelle für kleine Bildschirme */
+@media (max-width: 767.98px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .turnier-tabelle {
+        min-width: 600px;
+    }
+}
+
+/* Impressum-Bereich für kleine Bildschirme */
+@media (max-width: 991.98px) {
+    .esport-benefits {
+        margin-bottom: 3rem;
+    }
+    
+    .impressum-karte {
+        margin-top: 2rem;
+    }
+}
+
+/* Galerie für mobile Geräte */
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Countdown für sehr kleine Bildschirme */
+@media (max-width: 400px) {
+    .countdown-box {
+        margin: 0 0.5rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+}
+
+/* Anpassungen für Hochformat auf Tablets */
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+    .hero-bild {
+        min-height: 70vh;
+    }
+    
+    .section-standard, .section-dark {
+        padding: 3rem 0;
+    }
+}
+
+/* Anpassungen für Querformat auf Tablets */
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
+    .hero-bild {
+        min-height: 100vh;
+    }
+}
+
+
+
+
